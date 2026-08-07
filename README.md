@@ -1,10 +1,10 @@
-# radex-team-legal
+# quedex-legal
 
-Published legal documents for apps by Valerii Morhun.
+Published legal documents for Quedex.
 
 | Document | Live URL |
 |---|---|
-| Privacy Policy (Quedex) | https://mrxradex.github.io/radex-team-legal/ |
+| Privacy Policy (Quedex) | https://mrxradex.github.io/quedex-legal/ |
 
 ## How this is maintained
 
