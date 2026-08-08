@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Quedex</title>
-<meta name="description" content="Privacy policy for Quedex, a single-player card game by Valerii Morhun.">
+<title>Privacy Notice — Quedex</title>
+<meta name="description" content="Privacy notice for Quedex, a single-player card game by Valerii Morhun.">
 <meta name="color-scheme" content="light dark">
 <style>
   :root {
@@ -73,63 +73,64 @@
 </head>
 <body>
 <main>
-<h1>Privacy Policy — Quedex</h1>
-<p class="meta"><strong>Last updated:</strong> 7 August 2026<br><strong>Developer:</strong> Valerii Morhun ("we", "us")<br><strong>Contact:</strong> valerii.morhun@gmail.com</p>
+<h1>Privacy Notice — Quedex</h1>
+<p class="meta"><strong>Last updated:</strong> 9 August 2026<br><strong>Developer and data controller:</strong> Valerii Morhun ("we", "us")<br><strong>Contact:</strong> valerii.morhun@gmail.com</p>
+
 <h2>Summary</h2>
-<p>Quedex is a single-player card game. It has no accounts, no login, no user profiles, no social features, and no advertising. We do not sell or share your personal data, and we do not use your data for advertising or profiling.</p>
-<p>The game collects two limited categories of technical data: <strong>crash reports</strong>, so we can fix defects, and <strong>anonymous usage analytics</strong>, which you can turn off at any time in Settings. Neither category identifies you.</p>
-<h2>What the game stores on your device only</h2>
-<p>The following stays on your device and is never transmitted to us:</p>
-<ul><li><strong>Saved games</strong> — deck state, discard pile, card order, and the name you give a save.</li><li><strong>Settings</strong> — language, theme, sound and interface preferences, and your analytics choice.</li><li><strong>Local statistics</strong> — play time, day streaks, and session, pass, and card counters.</li></ul>
-<p>Deleting the app removes this data. We cannot access it, restore it, or recover it for you.</p>
+<p>Quedex is a single-player card game with no accounts, login, social features, or advertising. We do not sell personal data, use it for targeted advertising, or track players across other companies' apps or websites.</p>
+<p>The game sends two limited categories of technical data: <strong>crash and error reports</strong> through Sentry, and <strong>pseudonymous usage analytics</strong> through GameAnalytics. Analytics is enabled by default and can be disabled at any time in <strong>Settings → General → Privacy</strong>.</p>
+<p>"Pseudonymous" means the events do not contain a name, email address, account, or advertising ID, but they do carry random identifiers that let a provider recognize the same app installation or game session. Those identifiers and associated events are personal data under some privacy laws.</p>
+
+<h2>Data kept on your device</h2>
+<p>Saved games, save names, settings, and local play statistics are processed on your device and are not sent to us. Your analytics preference is also stored on the device.</p>
+<p>While analytics is enabled, Quedex may temporarily keep an offline event queue, session recovery data, retry state, and a random GameAnalytics installation identifier on the device. Sentry maintains its own random installation identifier. Uninstalling the app removes this local data, subject to the operating system's backup and restore behavior.</p>
+
 <h2>Crash and error reports</h2>
-<p>To find and fix defects, the game sends crash and error reports through <strong>Sentry</strong>, an error monitoring service.</p>
-<p>A crash report contains:</p>
-<ul><li>the error message and the technical stack trace,</li><li>the app version, build type, platform, and operating system version,</li><li>the technical context of the failure.</li></ul>
-<p>A crash report explicitly does <strong>not</strong> contain:</p>
-<ul><li>personal identifiers — the SDK's "default PII" collection is disabled,</li><li>screenshots, application logs, or a dump of the game's scene tree — all three attachments are disabled,</li><li>card text, save names, or filesystem paths — these are removed by a scrubbing step before any report leaves the device.</li></ul>
-<p><strong>Legal basis (EEA/UK):</strong> our legitimate interest in keeping the app stable and functional (Art. 6(1)(f) GDPR).</p>
-<p>Sentry acts as our processor. See the <a href="https://sentry.io/privacy/">Sentry privacy policy</a>.</p>
-<h2>Usage analytics — optional, off-switch in Settings</h2>
-<p>If analytics is enabled, the game sends anonymous, aggregated usage events through <strong>GameAnalytics</strong> so we can understand which packs and features are used and where players get stuck.</p>
-<p><strong>Legal basis (EEA/UK):</strong> your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time in <strong>Settings → General → Privacy</strong>.</p>
-<p>Each event carries only coarse technical context: app version and build type, platform and major OS version, the UI language code (e.g. <code>en</code> — never the full locale), a rough device tier derived from total memory, which screen the event happened on, a session identifier regenerated on every launch, and how long the session has been running.</p>
-<p>Events cover things like: session start and end, screen views, pack selection and progress, deck completion, language and theme changes, settings changes, save operations, purchase outcomes, and non-fatal errors.</p>
-<p>To count returning players, the analytics provider stores a <strong>random anonymous identifier</strong>. It is generated by the provider layer, is not derived from any device identifier, and is deleted when you opt out.</p>
-<h3>What analytics never collects</h3>
-<p>We designed the event contract to exclude the following, and this exclusion is enforced in code:</p>
-<ul><li>your name, email address, or any account data — the game has no accounts,</li><li>device identifiers such as IDFA or Android ID,</li><li>your IP address (we do not log or store it), exact device model, or exact screen resolution,</li><li>the text of any card, question, or answer,</li><li>save names or filesystem paths,</li><li>payment details, receipts, or transaction identifiers,</li><li>precise location — we collect no location data of any kind.</li></ul>
+<p>Quedex uses <strong>Sentry</strong> to receive crash and error reports. A report may contain:</p>
+<ul><li>an error message, stack trace, and source location;</li><li>app version, build type, platform, and operating-system version;</li><li>technical context needed to reproduce the failure;</li><li>a random Sentry installation identifier; and</li><li>the IP address necessarily received by Sentry when the device connects to its service.</li></ul>
+<p>The game disables Sentry's default PII option, screenshots, log attachments, scene-tree attachments, automatic log breadcrumbs, and app-hang tracking. A scrubber removes save names and operating-system home-directory names from error messages and exception values before reports are sent. Quedex does not set a Sentry user name, email address, account identifier, purchase receipt, or transaction identifier.</p>
+<p><strong>Purpose and legal basis in the EEA/UK:</strong> diagnosing failures and maintaining the security, reliability, and functionality of the app, based on our legitimate interests (Article 6(1)(f) GDPR/UK GDPR).</p>
+<p>Sentry acts as our service provider and processor. The Quedex Sentry project uses EU data residency. Crash reports are retained for the period configured in that project and then deleted; we set that period according to how long reports are reasonably needed to detect and diagnose recurring defects. See <a href="https://sentry.io/privacy/">Sentry's privacy notice</a>.</p>
+
+<h2>Usage analytics</h2>
+<p>Usage analytics is <strong>enabled by default</strong>. When enabled, Quedex sends events to <strong>GameAnalytics</strong>. Events describe actions such as launches and sessions, screen views, pack selection and coarse progression, deck completion, language and theme changes, settings categories used, save operations, purchase outcomes, and grouped non-fatal errors.</p>
+<p>Events and required provider annotations may include:</p>
+<ul><li>a random persistent GameAnalytics installation identifier;</li><li>a random identifier for each game session and its sequential session number;</li><li>event time and time since the session began;</li><li>app, build, game-engine, and analytics-client versions;</li><li>platform, major operating-system version, and manufacturer (<code>Apple</code> on Apple platforms and <code>unknown</code> elsewhere);</li><li>UI language, a coarse memory-based device tier, and a coarse screen name;</li><li>pack/product identifiers and bucketed or aggregated gameplay measurements;</li><li>the device's network IP address as connection data; GameAnalytics documents that it anonymizes the stored IP and uses it to infer geographic fields such as country and, where available, region or city.</li></ul>
+<p>The app does <strong>not</strong> send GameAnalytics your name, email address, account data, IDFA, Android Advertising ID, Android ID, exact device model, exact screen resolution, precise GPS location, card/question/answer text, save names, filesystem paths, payment details, receipts, or store transaction identifiers.</p>
+<p><strong>Purpose and legal basis in the EEA/UK:</strong> understanding how the game is used, improving progression and features, and monitoring performance, based on our legitimate interests (Article 6(1)(f) GDPR/UK GDPR). You can object to this processing at any time by disabling analytics in <strong>Settings → General → Privacy</strong>.</p>
+<p>GameAnalytics acts as our service provider and processor. Its published retention schedule is: raw and annotated data for one month, Player Warehouse data for one year, and annotated Player Lookup data used for retention calculations for 18 months. See the <a href="https://www.gameanalytics.com/trust/privacy-faq">GameAnalytics Developer Policy</a> and <a href="https://www.gameanalytics.com/trust/eu-data-processing-addendum">Data Processing Addendum</a>.</p>
+
 <h3>When you turn analytics off</h3>
-<p>Turning analytics off in Settings takes effect immediately. The game stops collecting events, discards anything queued but not yet sent, deletes stored session state and retry state, and deletes the anonymous provider identifier. Crash reporting continues to operate, since it is covered by the separate legal basis described above.</p>
+<p>Turning analytics off takes effect immediately for future analytics events. Quedex discards its unsent queue and removes its local analytics session, retry, and GameAnalytics identifier files. It also restarts the Sentry runtime scope to clear buffered analytics breadcrumbs; crash reporting remains active.</p>
+<p>Turning analytics off does not automatically erase events that were already delivered to GameAnalytics. You may contact us to exercise any deletion or other legal right that applies to those records. Because Quedex has no account and the identifiers are random, we may be unable to associate provider records with you unless enough technical information is available to verify the request.</p>
+
 <h2>Purchases</h2>
-<p>Card packs are sold through the Apple App Store and Google Play. Payment is handled entirely by the store: <strong>we never see or receive your card number, billing address, or any payment credentials.</strong> Those stay between you and the platform, which processes them under its own privacy policy.</p>
-<p>To unlock a pack and confirm the purchase back to the platform, the game receives a technical purchase confirmation from the store — the product identifier, a transaction or purchase identifier, and the purchase status. The same happens when you tap <strong>Restore purchases</strong>: the game asks the platform which products you already own.</p>
-<p>Of that confirmation, <strong>only the product identifier is kept</strong>, in an encrypted file on your device. Transaction identifiers are used at the moment of verification and are neither stored by the game nor transmitted to us.</p>
-<p><strong>We operate no servers of our own, so no purchase data reaches us at all.</strong> Your entitlements live on your device and with the platform. This also means we cannot look up, restore, or refund a purchase for you — that is handled by the store under its own terms.</p>
-<p>Purchase-related analytics events, when analytics is enabled, record only the outcome of a purchase — never its amount, receipt, or transaction identifier.</p>
-<h2>How we protect your information</h2>
-<p>We do not operate our own servers or user accounts, so there is no account database to breach. The technical data described above travels to our service providers over encrypted connections (HTTPS/TLS), and those providers maintain their own security programmes. Locally, the record of purchased packs is stored encrypted on your device.</p>
-<p>No system is perfectly secure. If a breach affecting your data occurs at one of our providers, we will act on their notification and inform affected users where the law requires it.</p>
-<h2>Third-party services</h2>
-<div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Their policy</th></tr></thead><tbody><tr><td>Sentry</td><td>Crash and error reporting</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr><tr><td>GameAnalytics</td><td>Anonymous usage analytics (only when enabled)</td><td><a href="https://gameanalytics.com/privacy/">https://gameanalytics.com/privacy/</a></td></tr><tr><td>Apple App Store / Google Play</td><td>Distribution and payments</td><td>Apple / Google privacy policies</td></tr></tbody></table></div>
-<h2>Data retention</h2>
-<ul><li>Crash reports: retained by Sentry under its default retention period, then deleted automatically.</li><li>Analytics events: retained by GameAnalytics in aggregated form.</li><li>Data on your device: retained until you delete it or uninstall the app.</li></ul>
+<p>Apple or Google processes payments under its own privacy terms. Quedex does not receive your card number, billing address, or payment credentials.</p>
+<p>The game receives a product identifier, transaction or purchase identifier, and purchase status to verify a purchase or restore an entitlement. Only the product identifier is retained in the encrypted local entitlement file. Transaction identifiers are used for verification and are not retained by the game or sent to us.</p>
+<p>When analytics is enabled, purchase analytics contains the static product identifier and a grouped outcome. It does not contain the price, payment details, receipt, or transaction identifier. Store consoles remain the source of authoritative purchase and revenue records.</p>
+
+<h2>Service providers and disclosures</h2>
+<div class="table-wrap"><table><thead><tr><th>Recipient</th><th>Role and purpose</th><th>Privacy information</th></tr></thead><tbody><tr><td>Sentry</td><td>Processor/service provider for crash and error reporting</td><td><a href="https://sentry.io/privacy/">Sentry privacy notice</a></td></tr><tr><td>GameAnalytics</td><td>Processor/service provider for usage analytics</td><td><a href="https://www.gameanalytics.com/privacy/">GameAnalytics privacy notice</a></td></tr><tr><td>Apple App Store / Google Play</td><td>Independent platform for distribution and payments</td><td>Apple / Google privacy notices</td></tr></tbody></table></div>
+<p>We disclose data to these providers only for the purposes described above. We do not sell personal data or share it for cross-context behavioral advertising.</p>
+
+<h2>Security and international transfers</h2>
+<p>Technical data is sent over encrypted network connections. Sentry and GameAnalytics apply their own administrative, technical, and physical security measures. No system is completely secure.</p>
+<p>Providers may process data outside your country. The Quedex Sentry project uses EU data residency. GameAnalytics states that relevant transfers to its US infrastructure and subprocessors rely on the European Commission's Standard Contractual Clauses. Its DPA lists AWS, GCP, and Imply as subprocessors for such transfers.</p>
+
 <h2>Children</h2>
-<p>Quedex is not directed at children under 13, and we do not knowingly collect personal data from anyone, children included.</p>
-<p>Because the game has no accounts and the technical data it sends is never tied to a person, there is no "this child's record" for us to look up or delete. What does work immediately: turning analytics off in Settings stops collection and erases what was stored, and deleting the app removes everything held on the device.</p>
-<h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, delete, or export your personal data, to object to processing, or to lodge a complaint with a data protection authority.</p>
-<p>Because the game holds no account and no directly identifying data, we usually cannot link stored technical data to you as an individual. The most effective controls are in your hands:</p>
-<ul><li><strong>Stop analytics collection:</strong> Settings → General → Privacy.</li><li><strong>Delete local data:</strong> uninstall the app.</li><li><strong>Ask us:</strong> write to valerii.morhun@gmail.com and we will respond within 30 days.</li></ul>
-<h3>Residents of California, Colorado, Connecticut, Utah, and Virginia</h3>
-<p>These states grant additional rights: to know what categories of personal information are collected and for what purpose, to request deletion or correction, and to opt out of sale or sharing of personal information and of targeted advertising.</p>
-<p><strong>We do not sell or share your personal information, and we run no advertising or targeted advertising of any kind.</strong> The only categories we handle are the technical identifiers and device characteristics listed above. To exercise any of these rights, or to appeal a decision on such a request, contact us at valerii.morhun@gmail.com. We will not discriminate against you for exercising them.</p>
-<h2>International transfers</h2>
-<p>Our service providers may process data outside your country, including in the United States. Where required, transfers rely on the European Commission's Standard Contractual Clauses or another approved safeguard.</p>
-<h2>Changes to this policy</h2>
-<p>If we change what the app collects, we will update this page and change the "Last updated" date above. Material changes affecting analytics will be reflected in the in-app privacy setting.</p>
+<p>Quedex is a general-audience game and is not directed to children under 13. We do not knowingly collect a child's name, contact details, account information, or content. The technical identifiers used for analytics and crash reporting may nevertheless be treated as personal information under children's privacy laws.</p>
+<p>If you are a parent or guardian and believe a child has provided personal data through Quedex, contact us. We will review the request and delete data where we can identify it and the law requires deletion. Analytics can also be disabled in the game's privacy settings.</p>
+
+<h2>Your privacy rights</h2>
+<p>Depending on where you live, you may have rights to access, correct, delete, or receive a copy of personal data, restrict or object to processing, withdraw consent where processing relies on consent, appeal a decision, or complain to a data-protection authority.</p>
+<p>Quedex has no user account and we deliberately avoid direct identifiers. This limits our ability to find a particular person's pseudonymous provider record, but it does not remove applicable rights. To make a request, email valerii.morhun@gmail.com. We may ask for information needed to verify and locate the relevant record and will respond within the period required by applicable law.</p>
+<p>US state privacy laws may also provide rights concerning access, correction, deletion, portability, and opt-out from certain sales, sharing, targeted advertising, or profiling. We do not sell personal data, share it for cross-context behavioral advertising, or use it for targeted advertising or qualifying profiling. We will not discriminate against you for exercising a privacy right.</p>
+
+<h2>Changes to this notice</h2>
+<p>If the app's data practices change, we will update this notice and its "Last updated" date. Store privacy declarations must be updated at the same time.</p>
+
 <h2>Contact</h2>
-<p>Valerii Morhun valerii.morhun@gmail.com</p>
+<p>Valerii Morhun<br>valerii.morhun@gmail.com</p>
 </main>
 <footer>Quedex · Valerii Morhun</footer>
 </body>

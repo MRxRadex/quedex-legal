@@ -4,7 +4,7 @@ Published legal documents for Quedex.
 
 | Document | Live URL |
 |---|---|
-| Privacy Policy (Quedex) | https://mrxradex.github.io/quedex-legal/ |
+| Privacy Notice (Quedex) | https://mrxradex.github.io/quedex-legal/ |
 
 ## How this is maintained
 
